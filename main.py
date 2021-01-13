@@ -11,6 +11,4 @@ def fibonacci(i: int) -> int:
 
 if __name__ == "__main__":
     input_number = input("数値を入力: ")
-    for i in range(1, int(input_number)):
-        print(str(fibonacci(i)), end=" ")
-    print()
+    print([fibonacci(i) for i in range(1, int(input_number))])
